@@ -1,4 +1,4 @@
-package com.example.senai.model.dao;
+package com.example.senai.dao;
 
 import java.util.ArrayList;
 import java.util.Arrays;

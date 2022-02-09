@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.example.senai.dao.AvengerDAO;
 import com.example.senai.exceptions.AvengersNotFoundExcetion;
-import com.example.senai.model.dao.AvengerDAO;
 import com.example.senai.model.transport.AvengerDTO;
 
 @Service

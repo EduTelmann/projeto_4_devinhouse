@@ -17,7 +17,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.example.senai.model.dao.UserSpringSecurity;
+import com.example.senai.model.UserSpringSecurity;
 import com.example.senai.model.transport.CredentialsDTO;
 import com.example.senai.model.transport.JwtDTO;
 import com.example.senai.util.JWTUtil;

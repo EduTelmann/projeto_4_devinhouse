@@ -1,4 +1,4 @@
-package com.example.senai.model.dao;
+package com.example.senai.model;
 
 import java.util.HashSet;
 import java.util.Objects;

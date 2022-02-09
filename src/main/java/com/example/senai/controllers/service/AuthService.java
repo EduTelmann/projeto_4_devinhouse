@@ -5,7 +5,7 @@ import java.util.Random;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.example.senai.model.dao.User;
+import com.example.senai.model.User;
 
 @Service
 public class AuthService {

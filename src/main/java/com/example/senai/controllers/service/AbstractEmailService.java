@@ -5,7 +5,7 @@ import java.util.Date;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 
-import com.example.senai.model.dao.User;
+import com.example.senai.model.User;
 
 public abstract class AbstractEmailService implements EmailService {
 

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.senai.controllers.service.AuthService;
 import com.example.senai.controllers.service.UserService;
-import com.example.senai.model.dao.UserSpringSecurity;
+import com.example.senai.model.UserSpringSecurity;
 import com.example.senai.model.transport.JwtDTO;
 import com.example.senai.model.transport.MailDTO;
 import com.example.senai.util.JWTUtil;

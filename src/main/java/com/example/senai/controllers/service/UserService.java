@@ -9,9 +9,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.example.senai.model.dao.User;
-import com.example.senai.model.dao.UserDAO;
-import com.example.senai.model.dao.UserSpringSecurity;
+import com.example.senai.dao.UserDAO;
+import com.example.senai.model.User;
+import com.example.senai.model.UserSpringSecurity;
 
 @Service
 public class UserService implements UserDetailsService {

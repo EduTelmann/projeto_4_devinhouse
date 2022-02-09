@@ -1,0 +1,14 @@
+resident
+	id Serial
+	name varchar(255)
+	lastname varchar(255)
+	birthday date
+	income decimal
+	cpf varchar(255)
+	adm_id Integer
+
+resident_adm
+	id Serial
+	email varchar(255)
+	password varchar(255)
+	is_admin Integer

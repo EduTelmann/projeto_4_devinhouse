@@ -2,7 +2,7 @@ package com.example.senai.controllers.service;
 
 import org.springframework.mail.SimpleMailMessage;
 
-import com.example.senai.model.dao.User;
+import com.example.senai.model.User;
 
 public interface EmailService {
 	

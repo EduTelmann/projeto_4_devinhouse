@@ -1,4 +1,4 @@
-package com.example.senai.model.dao;
+package com.example.senai.dao;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +7,8 @@ import java.util.Set;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
+
+import com.example.senai.model.User;
 
 @Repository
 public class UserDAO {

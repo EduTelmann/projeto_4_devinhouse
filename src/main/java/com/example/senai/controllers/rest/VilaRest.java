@@ -1,5 +1,6 @@
 package com.example.senai.controllers.rest;
 
+import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,8 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.senai.controllers.service.AvengerService;
+import com.example.senai.controllers.service.ResidentService;
 import com.example.senai.exceptions.AvengersNotFoundExcetion;
 import com.example.senai.model.transport.AvengerDTO;
+import com.example.senai.model.transport.ListDTO;
+import com.example.senai.model.transport.ResidentDTO;
 
 @RestController
 @RequestMapping("/api")
@@ -22,15 +26,28 @@ public class VilaRest {
 	
 	
 	private AvengerService avengerService;
+	private ResidentService residentService;
 	
-	public VilaRest(AvengerService avengerService) {
+	public VilaRest(AvengerService avengerService, ResidentService residentService) {
 		this.avengerService = avengerService;
+		this.residentService = residentService;
 	}
 	
 	@PreAuthorize("hasAnyRole('ADMIN')")
-	@GetMapping("/list")
+	@GetMapping("/listold")
 	public List<String> listOldAvengers() throws AvengersNotFoundExcetion{
 		return avengerService.listOldAvengers();
+	}
+	
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	@GetMapping("/listall")
+	public List<ResidentDTO> listResidents() throws SQLException{
+		return residentService.listResidentsAll();
+	}
+	@PreAuthorize("hasAnyRole('ADMIN')")
+	@GetMapping("/list")
+	public List<ListDTO> listResidentsNames() throws SQLException{
+		return residentService.listResidentsNames();
 	}
 	
 	@GetMapping("/list-all")
